@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+<body>
+    {% load dict_filters %}
+    <div class="container-fluid">
+     <header class="modal-header">
+        <h1>Welcome to Show Page</h1>
+
+     </header>
+     <div class="card p-3 m-3">
+        <table class="table table-hover">
+        <tr>
+            <th>Name:</th>
+            <th>Phone:</th>
+            <th>Email:</th>
+            <th>Basic</th>
+            <th>DA</th>
+            
+        </tr>
+        <tr>
+            <td>{{firstName}} {{lastName}}</td>
+            <td>{{contactInfo.phone}}</td>
+            <td>{{contactInfo|get_item:"e-mail"}}</td>
+            <td>{{salaryInfo.basic}}</td>
+            <td>{{salaryInfo.DA}}</td>
+        </tr>
+     </table>
+    
+     </div>
+    </div>
+     
+     <!-- <p>Values from Views are </p>
+     <p>Welcome , {{firstName}} {{lastName}}</p>
+     <p>Contact Details : {{contactInfo.phone}} {{contactInfo|get_item:"e-mail" }} </p>
+     <p>Address : {{address.state}} {{address.city}} {{address.pinCode}}</p>
+     <p>Salary Info :{{salaryInfo.basic}} DA: {{salaryInfo.DA}}</p>
+     -->
+     </body>
+     </html>

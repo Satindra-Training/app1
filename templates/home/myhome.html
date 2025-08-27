@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Add Bootstrap-4 CSS CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="modal-header">
+        <h1>Welcome to EJOBINDIA</h1>
+    </header>
+    <nav align="center">
+        <a class="btn btn-sm btn-info" href="{% url 'home_page' %}">Home</a> |
+        <a class="btn btn-sm btn-primary" href="{% url 'about_page' %}">About</a>|
+        <a class="btn btn-sm btn-warning" href="{% url 'contact_page' %}">Contact</a>
+    </nav>
+    <article class="container card p-3 m-3">
+        <p style="text-align: justify;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit enim aut, in tempore nobis obcaecati dolorum officiis ipsam dignissimos quidem et assumenda nulla commodi a accusamus eveniet officia molestias.
+            Quos ipsam, nihil molestias facere fugiat quae odit molestiae voluptatem velit similique voluptas aperiam eaque, cum, a numquam debitis neque error repellat reiciendis optio! Modi error quisquam cumque magni soluta?
+            Vero nisi, eius fugit sit eum eaque, quis inventore harum, veniam nobis necessitatibus laudantium ex quia iste ab non excepturi aliquid blanditiis nesciunt perferendis magnam architecto perspiciatis. Nobis, tempore cupiditate!
+            Mollitia maiores est, iusto fuga quae beatae libero necessitatibus corporis harum! Voluptate voluptatum assumenda nemo fugiat earum quae a? Sequi temporibus libero maxime corporis minima quaerat veniam, eos quod dolor!
+        </p>
+    </article>
+    <footer class="modal-footer">
+        <p>CopyRight &copy; EJOB-2025</p>
+    </footer>
+</body>
+</html>
